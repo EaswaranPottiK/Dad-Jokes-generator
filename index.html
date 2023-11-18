@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad Jokes generator</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+<body>
+    <h1>Dad Jokes generator 😆</h1>
+    <h3><i>Hey buddy wanna hear a joke ? then press the button below 😋</i></h3>
+    
+    <div id="enterDataHere">
+        <div class="oneCard">
+            <a id="modifyHere" style="font-size: 18px;">The moon is round hehe</a>
+            <br><br>
+            <div>
+                <span class="material-symbols-outlined" style="cursor: pointer;">share</span>
+                <span class="material-symbols-outlined" style="cursor: pointer;">send</span>
+                <span class="material-symbols-outlined" style="cursor: pointer;">ios_share</span>
+            </div>
+            <button id="fav" onclick="addToFav()">Add to fav</button>
+        </div>
+    </div>
+
+    <button style="background-color: #008CBA;" id="showMore">Tell me an another joke</button>
+
+    <br>
+    
+    <div style="display: flex; gap: 4px;">
+        <h4>Font size:</h4>
+        <button id="reduceFont" onclick="reduceFont()">-</button>
+        <button id="increaseFont" onclick="increaseFont()">+</button>
+    </div>
+
+    <div id="collection" style="font-size: 18px;">
+
+    </div>
+    
+    <script src="./script.js"></script>
+    
+</body>
+</html>
